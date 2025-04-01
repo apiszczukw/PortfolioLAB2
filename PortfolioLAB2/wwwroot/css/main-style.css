@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+
+:root {
+    --primary-100: #DFD6A7;
+    --primary-200: #F7CE5B;
+    --primary-300: #F7B05B;
+    --primary-400: #AF9B46;
+    --primary-500: #1F1300;
+    --font-color: var(--primary-500);
+    --background: var(--primary-100);
+    --body-font: "MuseoModerno", sans-serif;
+    --header-font: "Sriracha", cursive;
+    --special-font: "Doto", sans-serif;
+}
+
+
+body {
+    color: var(--font-color);
+    background-color: var(--background);
+    font-family: var(--body-font);
+}
+
+h1,h2,h3,h4,h5 
+{
+    font-family: var(--header-font);
+}
+
+.specialText
+{
+    font-family: var(--special-font);
+    font-size: 5rem;
+}
+
+i {
+    color: var(--primary-300);
+    font-size: 5rem;
+}
+
+
+
+
