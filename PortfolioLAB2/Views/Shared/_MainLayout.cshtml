@@ -1,17 +1,43 @@
-﻿<!DOCTYPE html> 
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title> @ViewData["Tytul"] - Piszcz </title>
+<head>
+	<title> @ViewData["Tytul"] - Piszcz </title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link href="~/css/main-style.css" rel="stylesheet" />
 
-    </head>
-    <body>
-        <h1> Moje portfolio </h1>
+</head>
+<body>
 
-        @RenderBody()
+	<nav class="navbar">
+		<div class="nav-center">
+			<div class="nav-header">
+				<a href="#" class="nav-logo">
+					<img src="~/grafiki/logo_wlasciwe.png" alt="logo" />
+				</a>
+				<button type="button" class="nav-btn btn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
 
-    </body>
+			</div>
+			<div class="nav-links">
+				<a class="nav-link" href="#">O mnie</a>
+				<a class="nav-link" href="#">Projekty</a>
+				<a class="nav-link" href="#">Curriculum Vitae</a>
+
+				<div class="nav-link contact-link">
+					<a class="btn" href="#">Kontakt</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+	@RenderBody()
+
+</body>
 </html>
