@@ -37,17 +37,15 @@ h1,h2,h3,h4,h5
 
 /* Stylowanie menu g³ównego */
 
-.navbar 
-{
-    background-color: black;
+.navbar {
+    /* background-color: black;*/
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.nav-center 
-{
-    background-color: white;
+.nav-center {
+    /*background-color: white;*/
     width: 80vw;
 }
 
@@ -56,11 +54,17 @@ h1,h2,h3,h4,h5
     height: 6rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-header img 
 {
     height: 6rem;
+}
+
+.nav-header i 
+{
+    font-size: 1.2rem;
 }
 
 .btn 
@@ -71,4 +75,43 @@ h1,h2,h3,h4,h5
     padding: 0.3rem 0.7rem;
     border: transparent;
     border-radius: 0.25rem;
+}
+
+.nav-links 
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+
+    transition-duration: 1s;
+    transition-timing-function: linear;
+   
+    
+}
+
+.nav-link 
+{
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--primary-500);
+    border-top: 1px solid var(--primary-400); 
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a
+{
+    text-decoration: none;
+}
+
+.nav-link:hover 
+{
+    color: var(--primary-300);
+}
+
+.show-links 
+{
+    height: 256px;
 }
