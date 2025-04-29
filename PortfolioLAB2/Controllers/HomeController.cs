@@ -9,5 +9,25 @@ namespace PortfolioLAB2.Controllers
         {
             return View();
         }
+
+        public IActionResult CV()
+        {
+            return View();
+        }
+
+        public IActionResult Kontakt()
+        {
+            return View();
+        }
+
+        public IActionResult Omnie()
+        {
+            return View();
+        }
+
+        public IActionResult Projekty()
+        {
+            return View();
+        }
     }
 }

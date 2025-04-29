@@ -13,7 +13,7 @@
 	<nav class="navbar">
 		<div class="nav-center">
 			<div class="nav-header">
-				<a href="#" class="nav-logo">
+				<a asp-action="Index" class="nav-logo">
 					<img src="~/grafiki/logo_wlasciwe.png" alt="logo" />
 				</a>
 				<button type="button" class="nav-btn btn" onclick="ShowMenu()">
@@ -22,12 +22,12 @@
 
 			</div>
 			<div class="nav-links">
-				<a class="nav-link" href="#">O mnie</a>
-				<a class="nav-link" href="#">Projekty</a>
-				<a class="nav-link" href="#">Curriculum Vitae</a>
+				<a class="nav-link" asp-action="Omnie">O mnie</a>
+				<a class="nav-link" asp-action="Projekty">Projekty</a>
+				<a class="nav-link" asp-action="CV">Curriculum Vitae</a>
 
 				<div class="nav-link contact-link">
-					<a class="btn" href="#">Kontakt</a>
+					<a class="btn" asp-action="Kontakt">Kontakt</a>
 				</div>
 			</div>
 		</div>
@@ -35,12 +35,13 @@
 
 
 
+	<main class="main-section">
+		@RenderBody()
+	</main>
 
-
-	@RenderBody()
-
-
-
+	<footer class="footer-section">
+		<p> 🍺 Strona wykonana przez <span> Adriannę Piszcz </span> 🍺 </p>
+	</footer>
 
 
 
