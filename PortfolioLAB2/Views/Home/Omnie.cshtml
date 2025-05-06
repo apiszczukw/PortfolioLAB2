@@ -2,4 +2,64 @@
 	ViewData["Tytul"] = "O mnie";
 }
 
-<h1> O mnie </h1>
+@section Style
+{
+	<style>
+		.omnie
+		{
+			display: flex;
+			width: 60vw;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.omnie img
+		{
+			height: 70vh;
+			border-radius: 1rem;
+			box-shadow: 5px;
+		}
+
+		.pic 
+		{
+			margin-right: 2rem;
+		}
+
+		.content h1 
+		{
+			margin: 0 0 2rem 0;
+			
+		}
+
+		.content 
+		{
+			font-size: 1.1rem;
+		}
+
+		.content b 
+		{
+				font-size: 1.2rem;
+				color: var(--primary-400);
+		}
+		</style>
+}
+
+
+<div class="omnie">
+	<div class="pic">
+		<img src="https://cdn.pixabay.com/photo/2022/03/25/03/37/male-7090223_960_720.jpg" />
+	</div>
+	<div class="content">
+		<h1> O MNIE </h1>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ante ac lectus gravida elementum. Cras sem ipsum, elementum et tempor eu, gravida at ante. Vestibulum efficitur lectus eu faucibus commodo. Aenean facilisis consectetur ipsum, quis maximus est porttitor id. Nam pulvinar nisi id fringilla finibus. Pellentesque volutpat volutpat neque, pharetra ornare neque fermentum cursus. Morbi finibus lorem id leo aliquam bibendum. Vestibulum eget egestas odio, id dictum justo. Phasellus dapibus, lorem sed sollicitudin pretium, nulla nibh fermentum lacus, ac vestibulum arcu enim commodo tellus. Ut quis ex id lorem facilisis vulputate.
+
+		Vestibulum turpis elit, lobortis ac elit in, lobortis aliquam ligula. Sed massa neque, ultricies in tellus sit amet, tristique lobortis felis. Morbi malesuada est sed dolor suscipit congue. Nullam non diam turpis. Vivamus sodales venenatis sapien, eu finibus sem. Suspendisse accumsan sem eu urna posuere, non pretium eros aliquet. Integer euismod ultrices nibh.
+		<p>
+		<b>GitHub: <a href="https://github.com/apiszcz" target="_blank">link</a></b>
+		</p>
+		<p>
+		<b>Linkedin: <a href="https://linkedin.com" >link</a></b>
+		</p>
+
+	</div>
+</div>

@@ -10,21 +10,25 @@ namespace PortfolioLAB2.Controllers
             return View();
         }
 
+        [Route("cv")]
         public IActionResult CV()
         {
             return View();
         }
 
+        [Route("kontakt")]
         public IActionResult Kontakt()
         {
             return View();
         }
 
+        [Route("omnie")]
         public IActionResult Omnie()
         {
             return View();
         }
 
+        [Route("projekty")]
         public IActionResult Projekty()
         {
             return View();
