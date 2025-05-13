@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5
     font-size: 1.2rem;
 }
 
-.btn 
+.custom-btn 
 {
     cursor: pointer;
     background-color: var(--primary-300);

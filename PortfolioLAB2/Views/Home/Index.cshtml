@@ -2,3 +2,31 @@
     ViewData["Tytul"] = "Strona główna";
 }
 
+@section Style 
+{
+    <style>
+        .welcome 
+        {
+            font-family: var(--special-font);
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 4rem - 6rem - 1.5rem);
+
+            position: relative;
+        }
+
+        .welcome::after
+        {
+            content: "Cześć";
+            color: var(--primary-300); 
+            
+            position: absolute;
+        }
+    </style>
+}
+
+<div class="welcome">
+    Cześć
+</div>
