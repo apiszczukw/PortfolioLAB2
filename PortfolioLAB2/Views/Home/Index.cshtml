@@ -4,9 +4,11 @@
 
 @section Style 
 {
+	<link href="~\css\main-style.css" rel="stylesheet" />
+    
     <style>
-        .welcome 
-        {
+
+		.welcome {
             font-family: var(--special-font);
             font-size: 4rem;
             display: flex;
@@ -23,7 +25,18 @@
             color: var(--primary-300); 
             
             position: absolute;
+
+            overflow: hidden;
+            width: 0%;
+
+            animation-name: loading;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
         }
+
+        
+
+
     </style>
 }
 
