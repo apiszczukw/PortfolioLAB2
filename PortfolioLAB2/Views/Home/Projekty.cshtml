@@ -11,41 +11,21 @@
 
 <div class="projects">
 
+	@foreach (var projekt in ViewBag.Projekty)
+	{
+		<div class="project">
+			<h2> @projekt.Name </h2>
+			<img src="@projekt.ImageSrc" />
+			<p>@projekt.Description</p>
+			<p>
+				@foreach (var tag in projekt.Tags.Split(","))
+				{
+					<b>#@tag</b>
+					
+				}
+			</p>
+		</div>
 
-	<div class="project">
-		<h2>Nazwa projektu</h2>
-		<img src="https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg" />
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet aliquam laoreet. Quisque nec fringilla risus, non mattis urna. Aliquam a dolor ornare dolor consequat pretium. Curabitur rhoncus bibendum urna.</p>
-		<p>
-			<b>#hashtag</b>
-			<b>#slowakluczowe</b>
-			<b>#wykorzystanenarzedzia</b>
-		</p>
-	</div>
-	<div class="project">
-		<h2>Nazwa projektu</h2>
-		<img src="https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg" />
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet aliquam laoreet. Quisque nec fringilla risus, non mattis urna. Aliquam a dolor ornare dolor consequat pretium. Curabitur rhoncus bibendum urna.</p>
-		<p>
-			<b>#hashtag</b>
-			<b>#slowakluczowe</b>
-			<b>#wykorzystanenarzedzia</b>
-		</p>
-	</div>
-	<div class="project">
-		<h2>Nazwa projektu</h2>
-		<img src="https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg" />
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet aliquam laoreet. Quisque nec fringilla risus, non mattis urna. Aliquam a dolor ornare dolor consequat pretium. Curabitur rhoncus bibendum urna.</p>
-		<p>
-			<b>#hashtag</b>
-			<b>#slowakluczowe</b>
-			<b>#wykorzystanenarzedzia</b>
-		</p>
-	</div>
-	
-
-
-
-
+	}
 
 </div>
